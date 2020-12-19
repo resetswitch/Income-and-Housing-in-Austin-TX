@@ -100,7 +100,7 @@ def OES(graph = False):
         child_dir = "graphs"
         if not os.path.exists(child_dir):
             os.makedirs(child_dir)
-        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300)
+        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300, bbox_inches='tight')
         plt.show()
         print("saving {} in {}".format(graph_filename, os.getcwd()))
 
@@ -178,7 +178,7 @@ def ZHVI (graph = False):
         child_dir = "graphs"
         if not os.path.exists(child_dir):
             os.makedirs(child_dir)
-        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300)
+        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300, bbox_inches='tight')
         print("saving {} in {}".format(graph_filename, os.getcwd()))
 
     return(x,y,y_bf,x_future,y_bf_future,regr, r2)
@@ -235,7 +235,7 @@ def mortgage(sp, sp_future, graph = False):
         child_dir = "graphs"
         if not os.path.exists(child_dir):
             os.makedirs(child_dir)
-        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300)
+        plt.savefig(os.path.join(child_dir, graph_filename), dpi=300, bbox_inches='tight')
         print("saving {} in {}".format(graph_filename, os.getcwd()))
         plt.show()
 

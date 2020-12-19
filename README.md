@@ -1,4 +1,4 @@
-# Austin Income and Housing
+<h1>Austin Income and Housing</h1>
 
 <h2>Intro</h2>
 <h6>
@@ -17,7 +17,7 @@ Housing is increasing across the US. How much has Austin's housing increased ove
 
 <h2>Data</h2>
 
-<h5>Resource 1</h5>
+<h4>Resource 1</h4>
 <h6>
 
 30% of income standard for Home affordability: https://www.census.gov/housing/census/publications/who-can-afford.pdf
@@ -25,7 +25,7 @@ Housing is increasing across the US. How much has Austin's housing increased ove
 Mary Schwartz and Ellen Wilson wrote a standard of housing back in 2006 and is still regarded by Harvard (as of 2018) and other well regarded resources to this day as as standard. The short of the census publication, is that 30% of income is the threshold for housing affordability until it becomes a housing cost burden.
 </h6>
 
-<h5>Resource 2</h5>
+<h4>Resource 2</h4>
 
 <h6>
 Occupational Employment Statistics (2010-2019): Data gathered from https://www.bls.gov/oes/tables.htm
@@ -35,7 +35,7 @@ Occupational Employment Statistics (OES) has data for several regions across the
 Due to the sheer size of each OES file per year (33MB), the files were cut down to just the Regions of interest.
 </h6>
 
-<h5>Resource 3A</h5>
+<h4>Resource 3A</h4>
 <h6>
 
 ZHVI Single-Family Homes Time Series: Data gathered from https://www.zillow.com/research/data/
@@ -45,7 +45,7 @@ Zillow has a bunch of really cool data, but we will be looking at Zillow Home Va
 To filter out the outliers, the inter-decile mean average is taken (excluding the first and last 10%, so from 10-90%) for all the regions in Austin-Round Rock records.
 </h6>
 
-<h5>Resource 3B</h5>
+<h4>Resource 3B</h4>
 <h6>
 
 Zillow has an article about down payment on a house https://www.zillow.com/home-buying-guide/down-payment-on-a-house/
@@ -53,20 +53,20 @@ Zillow has an article about down payment on a house https://www.zillow.com/home-
 Area's around the US vary for a typical down payment on a house. But for simplicity this article shows the benefits of choosing 20%, and we will be using that figure.
 </h6>
 
-<h5>Resource 4</h5>
+<h4>Resource 4</h4>
 <h6>
 
 Macrotrends 30 Year Fixed Mortgage Rate https://www.macrotrends.net/2604/30-year-fixed-mortgage-rate-chart
 </h6>
 
-<h5>Resource 5</h5>
+<h4>Resource 5</h4>
 <h6> 
 
 Bankrate offers a way to calculate mortgage payments https://www.bankrate.com/calculators/mortgages/mortgage-calculator.aspx through formula:
 
 <h2>Calculations</h2>
 
-<h5>Monthly Wage for 2</h5>
+<h4>Monthly Wage for 2</h4>
 
 <h6> 
 
@@ -78,13 +78,13 @@ Assuming a 40 hour work week for 52 weeks a year
 `wage_monthly_for_two` = Mean Wage * `hours_worked_per_month`
 </h6>
 
-<h5>30% of Wage for 2<h5>
+<h4>30% of Wage for 2<h4>
 <h6>
 
 `p30_monthly_wage_for_2` = `wage_monthly_for_two` * 2
 </h6>
 
-<h5>Mortgage formula<h5>
+<h4>Mortgage formula<h4>
 <h6>
 
 `monthly_mortgage`<img src="https://render.githubusercontent.com/render/math?math==P*\frac{r*(1%2Br)^{n}}{(1%2Br)^{n}-1}">
@@ -95,13 +95,13 @@ Assuming a 40 hour work week for 52 weeks a year
 - n = number of payments of lifetime (monthly), assuming 30-year fixed rate
 </h6>
 
-<h5>Results</h5>
+<h2>Results</h2>
 <h6>
 
-![](graphs/OES.png?raw=true|width=250)
-![](graphs/ZHVI.png?raw=true|width=250)
-![](graphs/mortgage.png?raw=true|width=250)
-![](graphs/OES&ZHVIMortgage.png?raw=true|width=250))
+<img src=graphs/OES.png width=325>
+<img src=graphs/ZHVI.png width=325>
+<img src=graphs/mortgage.png width=325>
+<img src=graphs/OES&ZHVIMortgage.png width=500>
 
 If we define affordability as: <img src="https://render.githubusercontent.com/render/math?math=1-\frac{monthly\_mortgage}{30percent\_of\_Wages\_for\_2\_workers}">
 
@@ -114,7 +114,5 @@ Affordability has shrunk from 67.8% in 2010 to 56.6% in 2019. In 2024, affordabi
 <h2>Conclusion</h2>
 <h6>
 
-Homes are still affordable, and will continue to be for a while.
+Although affordability has shrunk, homes are still affordable and will continue to be for a while.
 </h6>
-
-

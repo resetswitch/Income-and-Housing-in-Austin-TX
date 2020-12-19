@@ -70,7 +70,7 @@ Bankrate offers a way to calculate mortgage payments https://www.bankrate.com/ca
 
 <h6> 
 
-Mean Wage = is taking the `H_MEAN` column of the `All Occupations`
+Mean Wage = is taking the `H_MEAN` column of each `All Occupations` records
 
 Assuming a 40 hour work week for 52 weeks a year
 `hours_worked_per_month` = <img src="https://render.githubusercontent.com/render/math?math=40\frac{hour(s)}{week(s)}*\frac{52week(s)}{12month(s)}=173.\overline{33}\frac{hour(s)}{month(s)}">

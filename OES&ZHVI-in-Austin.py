@@ -162,7 +162,7 @@ def ZHVI (graph = False):
     # Graphing
     if graph == True:
         fig,ax = plt.subplots()
-        ax.set( title = "Mean of House Sell Price in range 10-90% of ZHVI for\nAustin(A),RoundRock(RR),SanMarcos(SM), Texas",
+        ax.set( title = "Mean House Sell Price in range 10-90% of ZHVI for\nAustin(A),RoundRock(RR),SanMarcos(SM), Texas",
                 xlabel = "Years",
                 ylabel = "Mean of 10-90% ZHVI (Dollars)")
         ax.text( 0.90,0.1, 'R2={}'.format(r2), horizontalalignment='center', verticalalignment='center', transform=ax.transAxes)
@@ -271,11 +271,11 @@ df.to_csv("results.csv")
 
 
 # Graphing
-plt.plot(       x.flatten(),            wage_monthly_for_2,  '-', color = '#0356fc', label = "Mean Wages")
-plt.plot(x_future.flatten(),     wage_monthly_future_for_2, '--', color = '#03fc6f', label = "Mean Wage Prediction")
+plt.plot(       x.flatten(),            wage_monthly_for_2,  '-', color = '#0356fc', label = "Mean Wages for 2 Workers")
+plt.plot(x_future.flatten(),     wage_monthly_future_for_2, '--', color = '#03fc6f', label = "Mean Wage Prediction for 2 Workers")
 
-plt.plot(       x.flatten(),        p30_monthly_wage_for_2,  '-', color = '#9600FD', label = "1/3rd of Mean Wages")
-plt.plot(x_future.flatten(), p30_monthly_wage_future_for_2, '--', color = '#5D00FD', label = "1/3rd of Mean Wages Prediction")
+plt.plot(       x.flatten(),        p30_monthly_wage_for_2,  '-', color = '#9600FD', label = "30% of Mean Wages for 2 Workers")
+plt.plot(x_future.flatten(), p30_monthly_wage_future_for_2, '--', color = '#5D00FD', label = "30% of Mean Wages for 2 Workers Prediction")
 
 plt.plot(       x.flatten(),              monthly_mortgage, '-', color = '#000000', label = "Mean Mortage")
 plt.plot(x_future.flatten(),       monthly_mortgage_future,'--', color = '#6A5D5D', label = "Mean Mortgage Prediction")
